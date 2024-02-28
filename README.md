@@ -92,4 +92,4 @@ http://47.101.171.247:8983/solr/test_01/select?fq=category:*&fq=coverageDynasty:
 
 ## 搜索功能设计与Solr界面展示
 
-![](C:\Users\73536\AppData\Roaming\marktext\images\2024-02-28-23-33-11-微信图片_20240228233219.jpg)
+![微信图片_20240228233219](https://github.com/archykool/SearchEngine_AncientChineseCalligraphy-Painting/assets/34702275/05662fb1-8319-4f8e-bf51-9ad6433fde0d)
