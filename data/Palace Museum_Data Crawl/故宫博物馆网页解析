@@ -1,0 +1,36 @@
+正则去空格 .re(r'/(^\s+)|(\s+$)/g')
+保存为表格 scrapy crawl tpmspider -o tpmspider2.csv -s FEED_EXPORT_ENCIDING=utf-8
+
+绘画 https://www.dpm.org.cn/collection/paints.html
+翻页 https://www.dpm.org.cn
+	//*[@id="building2"]/div/div[3]/a[last()]/@href
+详情1 tr:range(2,14)
+	标题//*[@id="building2"]/div/div[2]/table/tbody/tr[抠一下]/td[1]/a/text()（仍需正则处理）
+	朝代//*[@id="building2"]/div/div[2]/table/tbody/tr[抠一下]/td[2]/text()（仍需正则处理）
+	分类//*[@id="building2"]/div/div[2]/table/tbody/tr[抠一下]/td[3]/text()（仍需正则处理）
+	作者//*[@id="building2"]/div/div[2]/table/tbody/tr[抠一下]/td[4]/text()（仍需正则处理）
+二级 每页有12条内容
+	tr:range(2,14)
+	https://www.dpm.org.cn
+	//*[@id="building2"]/div/div[2]/table/tbody/tr[抠出来]/td[1]/a/@href
+详情2 图片//*[@id="hl_content"]/div/div[1]/div/div/div/img/@src
+	 标题//*[@id="hl_content"]/div/div[2]/h3/text()（仍需正则处理）
+	 内容//*[@id="hl_content"]/div/div[2]/div[1]/p
+	 标签//*[@id="hl_content"]/div/div[2]/div[2]/a[抠出来]/text()
+
+法书 https://www.dpm.org.cn/collection/handwritings.html
+翻页 https://www.dpm.org.cn 
+	//*[@id="building2"]/div/div[3]/a[last()]/@href
+详情1 tr:range(2,14)
+	标题//*[@id="building2"]/div/div[2]/table/tbody/tr[抠一下]/td[1]/a/text()（仍需正则处理）
+	朝代//*[@id="building2"]/div/div[2]/table/tbody/tr[抠一下]/td[2]/text()（仍需正则处理）
+	分类//*[@id="building2"]/div/div[2]/table/tbody/tr[抠一下]/td[3]/text()（仍需正则处理）
+	作者//*[@id="building2"]/div/div[2]/table/tbody/tr[抠一下]/td[4]/text()（仍需正则处理）
+二级 每页有12条内容
+	tr:range(2,14)
+	https://www.dpm.org.cn
+	//*[@id="building2"]/div/div[2]/table/tbody/tr[抠出来]/td[1]/a/@href
+详情2 图片//*[@id="hl_content"]/div/div[1]/div/div/div/img/@src
+	 标题//*[@id="hl_content"]/div/div[2]/h3/text()（仍需正则处理）
+	 内容//*[@id="hl_content"]/div/div[2]/div[1]/p
+	 标签//*[@id="hl_content"]/div/div[2]/div[2]/a[抠出来]/text()
